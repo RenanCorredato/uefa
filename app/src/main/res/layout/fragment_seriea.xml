@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SerieaFragment">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvCard1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cvCard2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:id="@+id/ivLogoBrasil"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_brazil_svgrepo_com"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvSeriaA"/>
+
+            <TextView
+            android:id="@+id/tvSeriaA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Brasil - Serie A"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/ivLogoBrasil"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/vDivider"
+                app:layout_constraintVertical_bias="0.1"/>
+
+            <View
+                android:id="@+id/vDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@id/ivLogoBrasil"
+                app:layout_constraintBottom_toTopOf="@id/ivLogoCorinthians"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tvCorinthians"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Corinthians"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vDivider"
+                app:layout_constraintEnd_toStartOf="@id/ivLogoCorinthians"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:id="@+id/ivLogoCorinthians"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_corinthians_paulista"
+               app:layout_constraintStart_toEndOf="@id/tvCorinthians"
+                app:layout_constraintTop_toBottomOf="@id/vDivider"
+                app:layout_constraintEnd_toStartOf="@id/tvHoras"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvHoras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19:00"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@id/ivLogoCorinthians"
+                app:layout_constraintTop_toBottomOf="@id/vDivider"
+                app:layout_constraintEnd_toStartOf="@id/ivLogoAndre"
+               app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:id="@+id/ivLogoAndre"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_esporte_clube_santo_andre_sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvHoras"
+                app:layout_constraintTop_toBottomOf="@id/vDivider"
+                app:layout_constraintEnd_toStartOf="@id/tvSantoAndre"/>
+
+            <TextView
+                android:id="@+id/tvSantoAndre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Santo Andre"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivLogoAndre"
+                app:layout_constraintTop_toBottomOf="@id/vDivider"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvCard2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="40dp"
+        app:layout_constraintTop_toBottomOf="@id/cvCard1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
+
+
+
+            <TextView
+                android:id="@+id/tvCruzeiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cruzeiro"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ivLogoCruzeiro"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:id="@+id/ivLogoCruzeiro"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_cruzeiro_esporte_clube_sc"
+                app:layout_constraintStart_toEndOf="@id/tvCruzeiro"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvHoras1"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvHoras1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21:00"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@id/ivLogoCruzeiro"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ivLogoSantos"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:id="@+id/ivLogoSantos"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_santos_futebol_clube_de_santos_sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvHoras1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvSantos"/>
+
+            <TextView
+                android:id="@+id/tvSantos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Santos"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivLogoSantos"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

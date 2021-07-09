@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.uefa.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_jogosFragment"
+            app:destination="@id/jogosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jogosFragment"
+        android:name="com.example.uefa.JogosFragment"
+        android:label="fragment_jogos"
+        tools:layout="@layout/fragment_jogos" >
+        <action
+            android:id="@+id/action_jogosFragment_to_ligaFragment"
+            app:destination="@id/ligaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ligaFragment"
+        android:name="com.example.uefa.LigaFragment"
+        android:label="fragment_liga"
+        tools:layout="@layout/fragment_liga" />
+</navigation>

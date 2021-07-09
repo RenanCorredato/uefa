@@ -1,0 +1,2 @@
+rootProject.name = "UEFA"
+include ':app'
